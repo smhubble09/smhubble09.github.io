@@ -1,0 +1,45 @@
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Centaur;
+    color: #40CDC1;
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: #9F0C6B;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+	text-align: left;
+    max-width: 500px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #56CD40;
+    color: whitesmoke;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 0.7em;
+}
