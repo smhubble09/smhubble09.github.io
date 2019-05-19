@@ -7,7 +7,7 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: Centaur;
-    color: #40CDC1;
+    color: #0044BE;
 }
 
 h1 {
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #56CD40;
+    background-color: #005BFF;
     color: whitesmoke;
 }
 
