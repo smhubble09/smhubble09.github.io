@@ -5,16 +5,45 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <title>Weather Of Today</title>
             <meta name="description" content="CIT230 Assignment: Start the Town Page Build">
+            <link rel="stylesheet" href="css/main.css">
             <body>
                 <header>
                     <h1>Weather Of Today</h1>
-                    <img src="images/town.jpg" alt="Preston">
+                    <div class="logo"><img src="images/logo.png" alt="Logo"></div>
                     <main>
                         <div class="motto">Always getting the information you need!</div>
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="/assignments/lesson-4/preston-4.html">Home</a></li>
+                                    <li><a href="https://smhubble09.github.io/assignments/lesson-4/preston-4.html">Preston</a></li>
+                                    <li><a href="#">Soda Springs</a></li>
+                                    <li><a href="#">Fish Haven</a></li>
+                                    <li><a href="#">Storm Center</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <img src="images/town.jpg" alt="Preston" class="center">
+                        <h2 class="center">7 Day Forcast</h2>
+                        <img src="images/weather.jpg" alt="Weather" class="center">
+                        <p class="center">
+                            Here are some weather facts that you need to know:
+                        </p>
                     </main>
                 </header>
                 <footer>
-
+                    <p style="display: inline">
+                        &#169;
+                        <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                        </script>
+                        Weather Of Today | Attributions | Shane Hubble | <script type="text/javascript">
+                            document.write(new Date().getMonth()+ 1 + '/' + new Date().getDate() + '/' + new Date().getFullYear());
+                            </script>
+                    </p>
                 </footer>
             </body>
         </head>
