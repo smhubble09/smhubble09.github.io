@@ -54,7 +54,7 @@ footer {
 
 .motto {
 	font-size: 18px;
-	color: #E0EEE0;	
+	color: #4AC948;	
 	margin-left: 600px;
 }
 
@@ -101,6 +101,15 @@ footer {
 h2 + img {
 	min-height: 75px;
 	min-width: auto;
+}
+
+@media (max-width: 500px) {
+	.img .center {
+		display: none;
+	}
+}
+h2 + img {
+	display: none;
 }
 
 /* child selectors */
