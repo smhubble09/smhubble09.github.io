@@ -37,3 +37,4 @@ if(mm < 10) {
 } 
 today = day + ',' + dd + '' + mm + '' + yyyy;
 
+document.write(today);
