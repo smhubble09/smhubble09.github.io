@@ -1,0 +1,138 @@
+/* type selectors */
+body { 
+	margin: 0;
+	padding: 0;
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Lato;
+}
+
+h1 {
+	margin: 0;
+    font-size: 30px;
+	font-family: Montserrat;
+    color: #4AC948;
+}
+
+h2 {
+    font-size: 25px;
+	font-family: Montserrat;
+    color: #4AC948;
+}
+
+h3 {
+    font-size: 20px;
+	font-family: Montserrat;
+    color: #4AC948;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 20px auto;
+    padding: 10px;
+	text-align: left;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #3D8B37;
+}
+
+footer {
+    font-size: 12px;
+}
+
+/* class selectors */
+.logo {
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.map {
+	width: auto;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.motto {
+	font-size: 18px;
+	color: #4AC948;	
+	margin-left: 600px;
+}
+
+.contact {
+	font-size: 20px;
+	color: #E0EEE0;
+}
+
+.nav {
+	padding: 16px 32px;
+	background: #4AC948;
+}
+
+.center {
+	display: block;
+	margin-left: 500px;
+	margin-right: auto;
+	width: 40%;
+}
+
+/* ID selectors */
+
+#header, #footer
+{
+	padding: 32px;
+	background-color: #3D8B37;
+}
+
+#main {
+	margin: 16px 32px;
+}
+
+/* descendant selectors */
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline;
+	margin-right: 16px;
+}
+.nav li a {
+		color: #E0EEE0;
+}
+
+/* adjacent sibling selectors */
+h2 + img {
+	min-height: 75px;
+	min-width: auto;
+}
+
+/* child selectors */
+div > a {
+	color: #BDFCC9;
+	text-decoration: none;
+}
+
+.nav li > a {
+	text-decoration: none;
+}
+
+/* link pseudo-class selectors */
+.nav li a:focus {
+	color: black;
+}
+.nav li a:hover {
+	color: red;
+}
+.nav li a:active {
+	color: blue;
+}
