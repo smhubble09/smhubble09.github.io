@@ -37,6 +37,8 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: #3D8B37;
+	display: flex;
+	flex-direction: column;
 }
 
 footer {
@@ -74,6 +76,14 @@ footer {
 .nav {
 	padding: 16px 32px;
 	background: #4AC948;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .center {
@@ -135,4 +145,11 @@ div > a {
 }
 .nav li a:active {
 	color: blue;
+}
+
+/* media */
+@media (min-width: 45em) {
+	.navigation li:first-child { display: none;	}
+	.navigation li { display: block; flex: 1 1 auto; }
+	.navigation, .container { flex-direction: row; }
 }
