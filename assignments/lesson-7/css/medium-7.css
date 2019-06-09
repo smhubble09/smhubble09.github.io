@@ -98,6 +98,103 @@ nav {
 	width: 40%;
 }
 
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.cloudy {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.cloudy:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	box-shadow: 0 0 50px #333;
+}
+
+.lightning {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.lightning:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	box-shadow: 0 0 50px #333
+}
+
+.rain {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.rain:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	box-shadow: 0 0 50px #333
+}
+
+.rainbow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.rainbow:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	box-shadow: 0 0 50px #333
+}
+
+.snow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.snow:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	box-shadow: 0 0 50px #333
+}
+
+.sunshine {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.sunshine:hover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	box-shadow: 0 0 50px #333
+}
+
 /* ID selectors */
 
 #header, #footer

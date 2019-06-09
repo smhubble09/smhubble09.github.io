@@ -7,11 +7,11 @@
             <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" media="(max-width: 700px)" href="css/small-7.css">
-            <link rel="stylesheet" media="(min-width: 700px, max-width: 1000px)" href="css/medium-7.css">
+            <link rel="stylesheet" media="(max-width: 1000px)" href="css/medium-7.css">
             <link rel="stylesheet" media="(min-width: 1000px)" href="css/large-7.css">
+            <link rel="stylesheet" href="scripts/currentdate.js">
         </head>
             <body>
-                <link rel="javascript" href="scripts/currentdate.js">
                 <header>
                     <h1>Weather Of Today</h1>
                     <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
@@ -41,6 +41,12 @@
                         Saturday morning, May 18th, kicks off the YMCA's annual Famous Idaho Potato Marathon. The marathon is actually four races: A full marathon, half marathon as well as 10k and 5k races. The marathons both start at 7:00 AM at Lucky Peak State Park and finish in the parking lot of the Albertsons Headquarters on Parkcenter Blvd West.
                         To continue reading, click <a href="https://idahonews.com/news/local/famous-idaho-potato-marathon-set-to-run-through-boise">here</a>
                     </p>
+                    <section>
+                        <h2>Wind Chill</h3>
+                         <hr>
+                         <p><em>Temperature</em>: <span id="output"></span>F</p>
+                         <hr>
+                    </section>
                 </main>
                 <footer>
                     <div class="contact">
@@ -54,7 +60,7 @@
                         <script>
                         document.write(new Date().getFullYear());
                         </script>
-                        Weather Of Today | Attributions | Shane Hubble | <script src="scripts/currentdate.js"></script>
+                        Weather Of Today | Attributions | Shane Hubble | <script type="text/javascript" src="scripts/currentdate.js"></script>
                     </p>
                 </footer>
             </body>
