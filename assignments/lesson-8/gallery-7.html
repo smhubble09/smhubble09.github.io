@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>Weather Of Today</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" media="(max-width: 700px)" href="css/small-7.css">
+            <link rel="stylesheet" media="(max-width: 1000px)" href="css/medium-7.css">
+            <link rel="stylesheet" media="(min-width: 1000px)" href="css/large-7.css">
+            <link rel="stylesheet" href="scripts/currentdate.js">
+        </head>
+            <body>
+                <header>
+                    <h1>Weather Of Today</h1>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-4/preston-4.html">Home</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-5/preston-5.html">Preston</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-6/preston-6.html">Soda Springs</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/preston-7.html">Fish Haven</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-8/preston-8.html">Storm Center</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <div><img src="images/cloudy.jpg.bak" alt="Cloudy" class="cloudy">Cloudy weather in Pocatello</div>
+                        <div><img src="images/lightning.jpg.bak" alt="Lightning" class="lightning">Lightning storms in Twin Falls</div>
+                        <div><img src="images/rain.jpg.bak" alt="Rain" class="rain">Rainstorm down in Preston</div>
+                        <div><img src="images/rainbow.jpg.bak" alt="Rainbow" class="rainbow">Rainstorm over in Boise</div>
+                        <div><img src="images/snow.jpg.bak" alt="Snow" class="snow">Big snow storm in Idaho Falls</div>
+                        <div><img src="images/sunshine.jpg.bak" alt="Sunshine" class="sunshine">Sunshine down in Fish Haven</div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <div class="map"><img src="images/map.jpg" alt="Map"></div>
+                    <p style="display: inline">
+                        &#169;
+                        <script>
+                        document.write(new Date().getFullYear());
+                        </script>
+                        Weather Of Today | Attributions | Shane Hubble | <script type="text/javascript" src="scripts/currentdate.js"></script>
+                    </p>
+                </footer>
+            </body>
+    </html>
