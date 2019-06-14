@@ -98,7 +98,7 @@ section {
 
 .center {
 	display: block;
-	margin-left: 500px;
+	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
 }
@@ -204,7 +204,32 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	box-shadow: 0 0 50px #333
+	box-shadow: 0 0 50px #333;
+}
+
+div.form {
+	display: block;
+    text-align: center;
+}
+
+.form {
+	display: inline-block;
+	width: auto;
+	max-width:500px; 
+	margin:0 auto;
+	background-color: #3D8B37;
+	box-shadow: 0 0 50px #333;
+}
+
+.thanks {
+	display: block;
+    text-align: center;
+	max-width:500px; 
+	margin:0 auto;
+	background-color: orange;
+	box-shadow: 0 0 50px #333;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ID selectors */

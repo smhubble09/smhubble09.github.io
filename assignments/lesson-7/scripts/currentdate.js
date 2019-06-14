@@ -1,4 +1,4 @@
-
+function currentDate() [
 var today = '0';
 var day = today.getDay():
 var dd = today.getDate();
@@ -37,4 +37,7 @@ if(mm < 10) {
 } 
 today = day + ',' + dd + '' + mm + '' + yyyy;
 
-document.write(today);
+return today;
+}
+
+document.getElementById('currentDate').innerHTML = currentDate();

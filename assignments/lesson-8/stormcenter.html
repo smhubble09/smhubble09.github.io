@@ -6,10 +6,11 @@
             <title>Weather Of Today</title>
             <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
             <link rel="stylesheet" href="css/normalize.css">
-            <link rel="stylesheet" media="(max-width: 700px)" href="css/small-7.css">
-            <link rel="stylesheet" media="(max-width: 1000px)" href="css/medium-7.css">
-            <link rel="stylesheet" media="(min-width: 1000px)" href="css/large-7.css">
-            <link rel="stylesheet" href="scripts/currentdate.js">
+            <link rel="stylesheet" media="(max-width: 700px)" href="css/small-8.css">
+            <link rel="stylesheet" media="(max-width: 1000px)" href="css/medium-8.css">
+            <link rel="stylesheet" media="(min-width: 1000px)" href="css/large-8.css">
+            <script type="text/javascript" href="scripts/currentdate.js"></script>
+            <script type="text/javascript" href="scripts/windchill.js"></script>
         </head>
             <body>
                 <header>
@@ -28,11 +29,61 @@
                                 <li><a href="https://smhubble09.github.io/assignments/lesson-5/preston-5.html">Preston</a></li>
                                 <li><a href="https://smhubble09.github.io/assignments/lesson-6/preston-6.html">Soda Springs</a></li>
                                 <li><a href="https://smhubble09.github.io/assignments/lesson-7/preston-7.html">Fish Haven</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-8/preston-8.html">Storm Center</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
                                 <li><a href="https://smhubble09.github.io/assignments/lesson-9/preston-9.html">Gallery</a></li>
                             </ul>
                         </div>
                     </nav>
+                    <form>
+                        <div class="form">
+                            <label for="fullName">Please enter your Full Name:</label>
+                            <input type="text" name="fullName" minlength="5" size="12" required pattern="[A-Za-z]{5,}"><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="myemail@gmail.com"><br>
+
+                            <label for="tel">Phone Number:</label>
+                            <input type="tel" name="tel" required><br>
+
+                            <label for="zipCode">Zip Code:</label>
+                            <input type="number" name="zipCode" required><br>
+
+                            <label for="sDate">Storm Date:</label>
+                            <input type="date" name="sDate"><br>
+
+                            <label for="sType">Storm Type:</label>
+                            <input list="types" name="sType">
+                            <datalist name="types">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist><br>
+
+                            <label for="severity">Storm Severity:</label>
+                            1<input type="range" name="severity" min="1" max="10">10<br>
+
+                            <label for="region">Storm Region:</label>
+                            <select name="region">
+                                <option value="Select Region" selected disabled>Select Region</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Sugar City">Sugar City</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select><br>
+
+                            Are you in danger?
+                            <input type="radio" name="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="no">
+                            <label for="no">No</label><br>
+
+                            <label for="info">Additional Information/Comments:</label><br>
+                            <textarea name="info" style="height:100px;width:400px" rows="10"></textarea><br>
+                            <label for="submit"></label>
+                            <input type="submit" name="submit" onclick="https://smhubble09.github.io/assignments/lesson-8/thanks.html">
+                        </div>
+                    </form>
                     <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
                     <h2 class="forecast">7 Day Forcast</h2>
                     <img src="images/weather.jpg.bak" alt="Weather" class="forecast">
