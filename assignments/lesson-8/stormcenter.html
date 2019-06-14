@@ -9,8 +9,8 @@
             <link rel="stylesheet" media="(max-width: 700px)" href="css/small-8.css">
             <link rel="stylesheet" media="(max-width: 1000px)" href="css/medium-8.css">
             <link rel="stylesheet" media="(min-width: 1000px)" href="css/large-8.css">
-            <script type="text/javascript" href="scripts/currentdate.js"></script>
-            <script type="text/javascript" href="scripts/windchill.js"></script>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/windchill.js"></script>
         </head>
             <body>
                 <header>
@@ -36,24 +36,24 @@
                     </nav>
                     <form>
                         <div class="form">
-                            <label for="fullName">Please enter your Full Name:</label>
-                            <input type="text" name="fullName" minlength="5" size="12" required pattern="[A-Za-z]{5,}"><br>
+                            <label for="name">Please enter your Full Name:</label>
+                            <input type="text" id="name" name="name" minlength="5" size="12" required pattern="[A-Za-z]{5,}"><br>
 
                             <label for="email">Email:</label>
-                            <input type="email" name="email" placeholder="myemail@gmail.com"><br>
+                            <input type="email" id="email" name="email" placeholder="myemail@gmail.com"><br>
 
                             <label for="tel">Phone Number:</label>
-                            <input type="tel" name="tel" required><br>
+                            <input type="tel" id="tel" name="tel" required><br>
 
                             <label for="zipCode">Zip Code:</label>
-                            <input type="number" name="zipCode" required><br>
+                            <input type="number" id="zipCode" name="zipCode" required><br>
 
                             <label for="sDate">Storm Date:</label>
-                            <input type="date" name="sDate"><br>
+                            <input type="date" id="sDate" name="sDate"><br>
 
                             <label for="sType">Storm Type:</label>
-                            <input list="types" name="sType">
-                            <datalist name="types">
+                            <input list="types" id="sType" name="sType">
+                            <datalist id="types">
                                 <option value="Flash Flood"></option>
                                 <option value="Hail"></option>
                                 <option value="Hurricane"></option>
@@ -62,10 +62,10 @@
                             </datalist><br>
 
                             <label for="severity">Storm Severity:</label>
-                            1<input type="range" name="severity" min="1" max="10">10<br>
+                            1<input type="range" id="severity" name="severity" min="1" max="10">10<br>
 
                             <label for="region">Storm Region:</label>
-                            <select name="region">
+                            <select id="region" name="region">
                                 <option value="Select Region" selected disabled>Select Region</option>
                                 <option value="Preston">Preston</option>
                                 <option value="Sugar City">Sugar City</option>
@@ -73,15 +73,15 @@
                             </select><br>
 
                             Are you in danger?
-                            <input type="radio" name="yes">
+                            <input type="radio" id="yes" name="yes">
                             <label for="yes">Yes</label>
-                            <input type="radio" name="no">
+                            <input type="radio" id="no" name="no">
                             <label for="no">No</label><br>
 
                             <label for="info">Additional Information/Comments:</label><br>
-                            <textarea name="info" style="height:100px;width:400px" rows="10"></textarea><br>
+                            <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea><br>
                             <label for="submit"></label>
-                            <input type="submit" name="submit" onclick="https://smhubble09.github.io/assignments/lesson-8/thanks.html">
+                            <input type="submit" id="submit" name="submit" onclick="window.location='https://smhubble09.github.io/assignments/lesson-8/thanks.html';">
                         </div>
                     </form>
                     <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
@@ -93,9 +93,9 @@
                         To continue reading, click <a href="https://idahonews.com/news/local/famous-idaho-potato-marathon-set-to-run-through-boise">here</a>
                     </p>
                     <section>
-                        <h2>Wind Chill</h3>
+                        <h2>Wind Chill</h2>
                          <hr>
-                         <p><em>Temperature</em>: <span id="output"></span>F</p>
+                         <p><em>Temperature</em>: <script src="scripts/windchill.js"></script>F</p>
                          <hr>
                     </section>
                 </main>
@@ -111,7 +111,7 @@
                         <script>
                         document.write(new Date().getFullYear());
                         </script>
-                        Weather Of Today | Attributions | Shane Hubble | <script type="text/javascript" src="scripts/currentdate.js"></script>
+                        Weather Of Today | Attributions | Shane Hubble | <script src="scripts/currentdate.js"></script>
                     </p>
                 </footer>
             </body>
