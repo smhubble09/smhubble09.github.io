@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>Weather Of Today</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small-10.css">
+            <link rel="stylesheet" href="css/medium-10.css">
+            <link rel="stylesheet" href="css/large-10.css">
+        </head>
+            <body>
+                <header>
+                    <h1>Weather Of Today</h1>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-9/index.html">Home</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-5/preston-5.html">Preston</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-6/preston-6.html">Soda Springs</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/preston-7.html">Fish Haven</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
+                    <h2 class="forecast">7 Day Forcast</h2>
+                    <img src="images/weather.jpg.bak" alt="Weather" class="forecast">
+                    <h3>Famous Idaho Potato Marathon set to run through Boise</h3>
+                    <p>
+                        Saturday morning, May 18th, kicks off the YMCA's annual Famous Idaho Potato Marathon. The marathon is actually four races: A full marathon, half marathon as well as 10k and 5k races. The marathons both start at 7:00 AM at Lucky Peak State Park and finish in the parking lot of the Albertsons Headquarters on Parkcenter Blvd West.
+                        To continue reading, click <a href="https://idahonews.com/news/local/famous-idaho-potato-marathon-set-to-run-through-boise">here</a>
+                    </p>
+                    <section>
+                            <h2>Weather</h3>
+                             <hr>
+                             <p>The current temperature in Preston, Idaho is <span id="curTemp"></span>&deg; F</p>
+                             <p> Humidity: <span id="humidity"> </span>&#37;</p>
+                             <p> Wind Speed: <span id="windspeed"> </span></p>
+                             <p> Wind Chill: <span id="windchill"> </span></p>
+                             <p> Currently: <span id="description"> </span></p>
+                             <p>Forecasted Temperature: <span id="fortemp"></span>&deg; F</p>
+                             <hr>
+                    </section>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <div><img src="images/map.jpg" class="map" alt="Map"></div>
+                    <p style="display: inline">
+                        <script>
+                        document.write(new Date().getFullYear());
+                        </script>
+                        <p>&COPY;Weather Of Today | Attributions | Shane Hubble | <span id="currentDate"></span></p>
+                    </p>
+                </footer>
+            <script href="scripts/currentdate.js"></script>
+            <script href="scripts/windchill.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            </body>
+    </html>
