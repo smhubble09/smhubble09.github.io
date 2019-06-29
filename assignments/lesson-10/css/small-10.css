@@ -45,6 +45,14 @@ footer {
     font-size: 12px;
 }
 
+section {
+ margin: 1rem;
+ max-width: 500px;
+ background-color: lightblue;
+ padding: 1rem;
+ border: 1px solid #444;
+}
+
 /* class selectors */
 .logo {
 	width: auto;

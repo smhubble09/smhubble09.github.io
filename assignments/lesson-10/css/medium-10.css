@@ -49,6 +49,14 @@ nav {
 	background: #4AC948;
 }
 
+section {
+ margin: 1rem;
+ max-width: 500px;
+ background-color: lightblue;
+ padding: 1rem;
+ border: 1px solid #444;
+}
+
 /* class selectors */
 .logo {
 	width: auto;
@@ -69,7 +77,11 @@ nav {
 .motto {
 	font-size: 18px;
 	color: #4AC948;	
-	margin-left: auto;
+	margin-left: 600px;
+}
+
+.hamburger {
+	display: none;
 }
 
 .contact {
@@ -100,9 +112,9 @@ nav {
 }
 
 .container {
+	margin: 1rem auto;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 }
 
