@@ -7,6 +7,11 @@ weatherRequest.send();
 weatherRequest.onload = function() {
   let weatherData = JSON.parse(weatherRequest.responseText);
   console.log(weatherData);
+  let icon = 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
+  let desc = weatherData.weather[0].description;
+  
+  document.getElementById('cc-img').setAttribute('src',icon)
+  document.getElementById('cc-img').setAttribute('alt',desc)
 
   document.getElementById('description').innerHTML = weatherData.weather[0].description;
   document.getElementById('curTemp').innerHTML = Math.round(weatherData.main.temp);

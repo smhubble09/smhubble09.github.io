@@ -48,15 +48,15 @@ function populateTownInfo(jsonObj){
 
     switch (myH2.textContent){
         case 'Preston':
-            myImage.src = "images/preston-water-park.jpg.bak";
+            myImage.src = 'images/preston-water-park.jpg.bak';
             break;
 
         case 'Soda Springs':
-			myImage.src = "images/soda-springs.jpg.bak";
+			myImage.src = 'images/soda-springs.jpg.bak';
 			break;
 
         case 'Fish Haven':
-            myImage.src = "images/fish-haven.jpg.bak";
+            myImage.src = 'images/fish-haven.jpg.bak';
              break;
     }
 

@@ -6,9 +6,9 @@
             <title>Weather Of Today</title>
             <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
             <link rel="stylesheet" href="css/normalize.css">
-            <link rel="stylesheet" href="css/small-11.css">
-            <link rel="stylesheet" href="css/medium-11.css">
-            <link rel="stylesheet" href="css/large-11.css">
+            <link rel="stylesheet" href="css/small-10.css">
+            <link rel="stylesheet" href="css/medium-10.css">
+            <link rel="stylesheet" href="css/large-10.css">
         </head>
             <body>
                 <header>
@@ -23,27 +23,54 @@
                             </div>
                             <ul class="nav navbar-nav">
                                 <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-9/index.html">Home</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-5/preston-5.html">Preston</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-6/preston-6.html">Soda Springs</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/preston-7.html">Fish Haven</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
-                                <li><a href="https://smhubble09.github.io/assignments/lesson-7/gallery-7.html">Gallery</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/index.html">Home</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/preston.html">Preston</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/sodasprings.html">Soda Springs</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/fishhaven.html">Fish Haven</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/stormcenter.html">Storm Center</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/lesson-11/gallery.html">Gallery</a></li>
                             </ul>
                         </div>
                     </nav>
                     <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
-                    <h2 class="forecast">5 Day Forcast</h2>
-                    <img src="images/weather.jpg.bak" alt="Weather" class="forecast">
+                    <section class="forecast">
+                        <h3>5 Day Forecast</h3>
+                        <table>
+                            <tr>
+                                <th><span id='day1'></span></th>
+                                <th><span id='day2'></span></th>
+                                <th><span id='day3'></span></th>
+                                <th><span id='day4'></span></th>
+                                <th><span id='day5'></span></th>
+            
+                            </tr>
+                            <tr>
+                                <td><img id='icon1' src="#" alt=""></td>
+                                <td><img id='icon2' src="#" alt=""></td>
+                                <td><img id='icon3' src="#" alt=""></td>
+                                <td><img id='icon4' src="#" alt=""></td>
+                                <td><img id='icon5' src="#" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><span id="day1Temp"></span>&deg;F</td>
+                                <td><span id="day2Temp"></span>&deg;F</td>
+                                <td><span id="day3Temp"></span>&deg;F</td>
+                                <td><span id="day4Temp"></span>&deg;F</td>
+                                <td><span id="day5Temp"></span>&deg;F</td>
+                            </tr>
+                        </table>
+                    </section>
                     <h3>Famous Idaho Potato Marathon set to run through Boise</h3>
                     <p>
                         Saturday morning, May 18th, kicks off the YMCA's annual Famous Idaho Potato Marathon. The marathon is actually four races: A full marathon, half marathon as well as 10k and 5k races. The marathons both start at 7:00 AM at Lucky Peak State Park and finish in the parking lot of the Albertsons Headquarters on Parkcenter Blvd West.
                         To continue reading, click <a href="https://idahonews.com/news/local/famous-idaho-potato-marathon-set-to-run-through-boise">here</a>
                     </p>
-                    <section>
-                            <h2>Weather</h3>
+                    <section class="temperature">
+                            <h2>Weather</h2>
                              <hr>
-                             <p>The current temperature in Preston, Idaho is <span id="curTemp"></span>&deg; F</p>
+                             <p>The current temperature in Preston, Idaho is <span id="curTemp"></span>&deg; F
+                                <img id="cc-img" src="#" alt="">
+                            </p>
                              <p> Humidity: <span id="humidity"></span>&#37;</p>
                              <p> Wind Speed: <span id="windspeed"></span>MPH</p>
                              <p> Wind Chill: <span id="windchill"></span>&deg; F</p>
@@ -66,8 +93,7 @@
                         <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
                     </p>
                 </footer>
-            <script href="scripts/currentdate.js"></script>
-            <script href="scripts/windchill.js"></script>
-            <script src="scripts/weatherapi.js"></script>
+            <script src="scripts/Prestonweatherapi.js"></script>
+            <script src="scripts/currentdate.js"></script>
             </body>
     </html>
