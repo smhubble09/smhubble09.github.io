@@ -1,6 +1,6 @@
 //Current Weather
 var weatherCurrent = new XMLHttpRequest();
-var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2';
+var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2';
 
 weatherCurrent.open('Get', apiURLstring, true);
 weatherCurrent.send();
@@ -16,7 +16,7 @@ weatherCurrent.onload = function () {
 }
 //Forecast
 	var weatherForecast = new XMLHttpRequest();
-	weatherForecast.open('Get', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2', true);
+	weatherForecast.open('Get', 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2', true);
 	weatherForecast.send();
   
 	weatherForecast.onload = function() {
