@@ -45,14 +45,6 @@ footer {
     font-size: 12px;
 }
 
-section {
- margin: 1rem;
- max-width: 500px;
- background-color: lightblue;
- padding: 1rem;
- border: 1px solid #444;
-}
-
 /* class selectors */
 .logo {
 	width: auto;
@@ -79,6 +71,7 @@ section {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
 .center {
@@ -105,11 +98,43 @@ section {
 	margin-right: auto;
 }
 
-.container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(6, 1fr);
-	grid-gap: 10px;
+.contain{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.contain div {
+	border-radius: 5px;
+	padding: 0px;
+	max-width: 300px;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 10px #333;
+	background-color: #3D8B37;
+}
+
+.contain p {
+	color: white;
+}
+
+.contain h2 {
+	text-align: center;
+	margin-top: 12px;
+	color: #4AC948;
+}
+	
+.contain p:first-of-type{
+	text-align: left;
+	margin-bottom: 24px;
+	font-size: 12px;
+	color: #4AC948;
+	margin-top: 0;
+}
+	
+.contain img{
+	margin: 18px auto 0 auto;
+	max-width: 300px;
 }
 
 .cloudy {
