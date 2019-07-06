@@ -98,6 +98,13 @@ nav {
 	width: 40%;
 }
 
+.container {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
 .forecast {
 	display: block;
 	margin-left: auto;
