@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>Weather Of Today</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+            <style>
+                #map {
+                    height: 100%;
+                }
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            </style>
+        </head>
+            <body>
+                <div id="map"></div>
+                <script>
+                    var map;
+                    function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: 42.095994, lng: -111.876274},
+                            zoom: 8
+                        });
+                    }
+                </script>
+                <header>
+                    <h1>Weather Of Today</h1>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/index.html">Home</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/preston.html">Preston</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/sodasprings.html">Soda Springs</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/fishhaven.html">Fish Haven</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+                                <li><a href="https://smhubble09.github.io/assignments/weathersite/gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
+                    <section class="forecast">
+                        <h3>5 Day Forecast</h3>
+                        <table>
+                            <tr>
+                                <th><span id='day1'></span></th>
+                                <th><span id='day2'></span></th>
+                                <th><span id='day3'></span></th>
+                                <th><span id='day4'></span></th>
+                                <th><span id='day5'></span></th>
+                            </tr>
+                            <tr>
+                                <td><img id='icon1' src="#" alt=""></td>
+                                <td><img id='icon2' src="#" alt=""></td>
+                                <td><img id='icon3' src="#" alt=""></td>
+                                <td><img id='icon4' src="#" alt=""></td>
+                                <td><img id='icon5' src="#" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><span id="day1Temp"></span>&deg;F</td>
+                                <td><span id="day2Temp"></span>&deg;F</td>
+                                <td><span id="day3Temp"></span>&deg;F</td>
+                                <td><span id="day4Temp"></span>&deg;F</td>
+                                <td><span id="day5Temp"></span>&deg;F</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <h3>Famous Idaho Potato Marathon set to run through Boise</h3>
+                    <p>
+                        Saturday morning, May 18th, kicks off the YMCA's annual Famous Idaho Potato Marathon. The marathon is actually four races: A full marathon, half marathon as well as 10k and 5k races. The marathons both start at 7:00 AM at Lucky Peak State Park and finish in the parking lot of the Albertsons Headquarters on Parkcenter Blvd West.
+                        To continue reading, click <a href="https://idahonews.com/news/local/famous-idaho-potato-marathon-set-to-run-through-boise">here</a>
+                    </p>
+                    <section class="temperature">
+                            <h2>Weather</h2>
+                             <hr>
+                             <p>The current temperature in Preston, Idaho is <span id="curTemp"></span>&deg; F
+                                <img id="cc-img" src="#" alt="">
+                            </p>
+                             <p> Humidity: <span id="humidity"></span>&#37;</p>
+                             <p> Wind Speed: <span id="windspeed"></span>MPH</p>
+                             <p> Wind Chill: <span id="windchill"></span>&deg; F</p>
+                             <p> Currently: <span id="description"></span></p>
+                             <p>Forecasted Temperature: <span id="fortemp"></span>&deg; F</p>
+                             <hr>
+                    </section>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmmUz5SuSGILYQ8g9CxxPvSN7KKPJXo_0&callback=initMap">
+                    </script>
+                    <p style="display: inline">
+                        <script>
+                        document.write(new Date().getFullYear());
+                        </script>
+                        <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
+                    </p>
+                </footer>
+            <script src="scripts/Prestonweatherapi.js"></script>
+            <script src="scripts/currentdate.js"></script>
+            </body>
+    </html>
