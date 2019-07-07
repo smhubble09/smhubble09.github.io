@@ -9,10 +9,11 @@ body {
 }
 
 h1 {
-	margin: 0;
+	margin-right: 16px;
+	margin-top: -70px;
     font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
-    color: #4AC948;
+	float: right;
 }
 
 h2 {
@@ -29,14 +30,24 @@ h3 {
     border-bottom: 1px solid #bbb;
 }
 
-header, main, footer {
+header {
     margin: 20px auto;
     padding: 10px;
+	color: #4AC948;
+	height: 200px;
+}
+main {
+	margin: 20px auto;
+    padding: 10px;
 	text-align: left;
+	color: black;
 }
 
-header, footer {
+footer {
     text-align: center;
+	margin: 20px auto;
+    padding: 10px;
+	color: #4AC948;
     background-color: #3D8B37;
 }
 
@@ -49,15 +60,45 @@ nav {
 	background: #4AC948;
 }
 
-section {
- margin: 1rem;
- max-width: 500px;
- background-color: lightblue;
- padding: 1rem;
- border: 1px solid #444;
+/* class selectors */
+.temperature {
+    margin: 10px;
+    max-width: 340px;
+    max-height: 350px;
+    background-color: lightgreen;
+    padding: 1rem;
+    border: 1px solid #444;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    float: left;
+    margin-top: 15px;
+	opacity: .85;
 }
 
-/* class selectors */
+.temperature p {
+	display: block;
+    margin-block-start: -.5em;
+    margin-block-end: -.5em;
+}
+
+.table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+th {
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+
+td {
+	padding-right: 13px;
+	padding-left: 13px;
+	text-align: center;
+}
+
 .logo {
 	width: auto;
 	height: auto;
@@ -117,7 +158,6 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
-	margin: 1rem;
 	max-width: 500px;
 	background-color: lightblue;
 	padding: 1rem;
@@ -254,6 +294,11 @@ div.form {
 
 #main {
 	margin: 16px 32px;
+}
+
+#banner {
+	display: inline;
+	width: 40%;
 }
 
 /* descendant selectors */

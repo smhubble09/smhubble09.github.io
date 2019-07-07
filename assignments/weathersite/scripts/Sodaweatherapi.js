@@ -16,7 +16,7 @@ weatherCurrent.onload = function () {
 }
 //Forecast
 	var weatherForecast = new XMLHttpRequest();
-	weatherForecast.open('Get', 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2', true);
+	weatherForecast.open('Get', 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2', true);
 	weatherForecast.send();
   
 	weatherForecast.onload = function() {
@@ -64,7 +64,7 @@ weatherCurrent.onload = function () {
     document.getElementById('day5Temp').innerHTML = listTemp[4];
 }
 //Upcoming Events
-var section = document.querySelector('section.contain');
+var aside = document.querySelector('aside');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -82,10 +82,9 @@ function showTown(jsonObj) {
 	  if ((info[i].name == 'Soda Springs') == false){
 	  continue;	
   }
-	var myArticle = document.createElement('article');
+	var myAside = document.createElement('aside');
     var myH2 = document.createElement('h2');
     var myPara = document.createElement('p');
-	var myImage = document.createElement('img');
 	
 	myH2.textContent = 'Upcoming events in Soda Springs:';
 	
@@ -96,12 +95,10 @@ function showTown(jsonObj) {
 		myPara.appendChild(listItem);
 	}
 	
-	myArticle.appendChild(myH2);
-	myArticle.appendChild(myPara);
-	myArticle.appendChild(myImage);
-	
-	myImage.src = 'images/soda-springs.jpg.bak';
-	section.appendChild(myArticle);
+	myAside.appendChild(myH2);
+	myAside.appendChild(myPara);
+
+	aside.appendChild(myAside);
   }
  }
 }

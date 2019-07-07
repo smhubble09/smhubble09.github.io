@@ -10,6 +10,10 @@
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/Sodaweatherapi.js"></script>
+            <script src="scripts/windchill.js"></script>
         </head>
             <body>
                 </script>
@@ -34,6 +38,19 @@
                         </div>
                     </nav>
                     <h3>Soda Springs</h3>
+                    <section class="temperature">
+                        <h2>Weather</h2>
+                            <hr>
+                            <p>The current temperature in Soda Springs, Idaho is <span id="curTemp"></span>&deg; F
+                            <img id="cc-img" src="#" alt="">
+                        </p>
+                            <p> Humidity: <span id="humidity"></span>&#37;</p>
+                            <p> Wind Speed: <span id="windspeed"></span>MPH</p>
+                            <p> Wind Chill: <span id="windchill"></span>&deg; F</p>
+                            <p> Currently: <span id="description"></span></p>
+                            <p>Forecasted Temperature: <span id="fortemp"></span>&deg; F</p>
+                            <hr>
+                    </section>
                     <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
                     <section class="forecast">
                         <h3>5 Day Forecast</h3>
@@ -61,19 +78,8 @@
                             </tr>
                         </table>
                     </section>
-                    <section class="temperature">
-                            <h2>Weather</h2>
-                             <hr>
-                             <p>The current temperature in Soda Springs, Idaho is <span id="curTemp"></span>&deg; F
-                                <img id="cc-img" src="#" alt="">
-                            </p>
-                             <p> Humidity: <span id="humidity"></span>&#37;</p>
-                             <p> Wind Speed: <span id="windspeed"></span>MPH</p>
-                             <p> Wind Chill: <span id="windchill"></span>&deg; F</p>
-                             <p> Currently: <span id="description"></span></p>
-                             <p>Forecasted Temperature: <span id="fortemp"></span>&deg; F</p>
-                             <hr>
-                    </section>
+                    <aside class="levents" id="events">
+                        </aside>
                 </main>
                 <footer>
                     <div class="contact">
@@ -89,10 +95,6 @@
                         <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
                     </p>
                 </footer>
-            <script src="scripts/currentdate.js"></script>
-            <script src="scripts/hamburger.js"></script>
-            <script src="scripts/Sodaweatherapi.js"></script>
-            <script src="scripts/windchill.js"></script>
             <script src="scripts/map.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmmUz5SuSGILYQ8g9CxxPvSN7KKPJXo_0&callback=initMap" async defer></script>
             </body>

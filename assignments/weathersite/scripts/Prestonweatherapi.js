@@ -33,7 +33,7 @@ weatherCurrent.onload = function () {
 			var today = new Date(foreData.list[i].dt * 1000);
 			var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 			var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-			var currDate = days[today.getDay()] + ',' + '<br>' + months[today.getMonth()] + ' ' + today.getDate();
+			var currDate = days[today.getDay()] + ',' + '<br>' + months[today.getMonth()] + '&nbsp' + today.getDate();
 			listDate.push(currDate);
 			
             var icon = foreData.list[i].weather[0].icon;
@@ -64,7 +64,7 @@ weatherCurrent.onload = function () {
     document.getElementById('day5Temp').innerHTML = listTemp[4];
 }
 //Upcoming Events
-var section = document.querySelector('section.contain');
+var aside = document.querySelector('aside');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -82,10 +82,9 @@ function showTown(jsonObj) {
 	  if ((info[i].name == 'Preston') == false){
 	  continue;	
   }
-	var myArticle = document.createElement('article');
+	var myAside = document.createElement('aside');
     var myH2 = document.createElement('h2');
     var myPara = document.createElement('p');
-	var myImage = document.createElement('img');
 	
 	myH2.textContent = 'Upcoming events in Preston:';
 	
@@ -96,12 +95,10 @@ function showTown(jsonObj) {
 		myPara.appendChild(listItem);
 	}
 	
-	myArticle.appendChild(myH2);
-	myArticle.appendChild(myPara);
-	myArticle.appendChild(myImage);
-	
-	myImage.src = 'images/preston-water-park.jpg.bak';
-	section.appendChild(myArticle);
+	myAside.appendChild(myH2);
+	myAside.appendChild(myPara);
+
+	aside.appendChild(myAside);
   }
  }
 }
