@@ -1,3 +1,4 @@
+@media screen and (min-width: 768px) {
 /* type selectors */
 body { 
 	margin: 0;
@@ -66,7 +67,7 @@ section {
 }
 
 .map {
-	max-width: 30%;
+	max-width: 56%;
 	max-height: 30%;
 	display: block;
 	margin-left: auto;
@@ -259,4 +260,5 @@ div > a {
 }
 .nav li a:active {
 	color: blue;
+}
 }
