@@ -10,13 +10,8 @@
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
-            <script src="scripts/currentdate.js"></script>
-            <script src="scripts/hamburger.js"></script>
-            <script src="scripts/Sodaweatherapi.js"></script>
-            <script src="scripts/windchill.js"></script>
         </head>
             <body>
-                </script>
                 <header>
                     <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div> 
                     <h1>Weather Of Today</h1>
@@ -35,6 +30,7 @@
                                 <li><a href="fishhaven.html">Fish Haven</a></li>
                                 <li><a href="stormcenter.html">Storm Center</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
                         </div>
                     </nav>
                     <h3>Soda Springs</h3>
@@ -49,9 +45,8 @@
                             <p> Wind Chill: <span id="windchill"></span>&deg; F</p>
                             <p> Currently: <span id="description"></span></p>
                             <p>Forecasted Temperature: <span id="fortemp"></span>&deg; F</p>
-                            <hr>
                     </section>
-                    <img src="images/franklin.jpeg.bak" alt="Franklin" class="center">
+                    <img src="images/city.jpg.bak" alt="City" id="banner">
                     <section class="forecast">
                         <h3>5 Day Forecast</h3>
                         <table>
@@ -78,6 +73,12 @@
                             </tr>
                         </table>
                     </section>
+                    <section class="news">
+                        <h4>Old Railroad in Yellowstone Will Be Converted Into Pathway</h4><br>
+                        <p>BILLINGS, MT. (AP) — A nine-mile stretch of abandoned railroad in southwest Montana will be resurrected to once again carry Yellowstone National Park-area tourists...
+                            <a href="https://mylocalradio.com/old-railroad-in-yellowstone-will-be-converted-into-pathway/" target="_blank">Continue reading here</a>
+                        </p>
+                    </section>
                     <aside class="levents" id="events">
                         </aside>
                 </main>
@@ -87,15 +88,16 @@
                         Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
                         </p>
                     </div>
-                    <div id="map"></div>
+                    <div><img src="images/sodamap.png.bak" class="map" alt="Map"></div>
                     <p style="display: inline">
                         <script>
                         document.write(new Date().getFullYear());
                         </script>
                         <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
-                    </p>
                 </footer>
-            <script src="scripts/map.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmmUz5SuSGILYQ8g9CxxPvSN7KKPJXo_0&callback=initMap" async defer></script>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/Sodaweatherapi.js"></script>
+            <script src="scripts/windchill.js"></script>
             </body>
     </html>

@@ -4,7 +4,7 @@ body {
 	padding: 0;
     font-size: 16px; 
     line-height: 32px;
-    font-family: Lato;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 h1 {
@@ -28,32 +28,91 @@ h3 {
     border-bottom: 1px solid #bbb;
 }
 
-header, main, footer {
-    margin: 20px auto;
-    padding: 10px;
-	text-align: left;
+h4 {
+    font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+    text-align: center;
+	display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: bold;
 }
 
-header, footer, footer a {
+h5 {
+    font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: #3D8B37;
-	display: flex;
-	flex-direction: column;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+header {
+    margin: 20px auto;
+    padding: 10px;
+	color: #4AC948;
+	height: 200px;
+}
+main {
+	margin: 20px auto;
+    padding: 10px;
+	text-align: left;
+	color: black;
 }
 
 footer {
-    font-size: 12px;
+    text-align: center;
+	margin: 20px auto;
+    padding: 10px;
+	color: #4AC948;
+    background-color: #3D8B37;
+	font-size: 12px;
+}
+
+aside {
+	display: block;
+	background-color: #3D8B37;
+	text-align: center;
 }
 
 /* class selectors */
+.news {
+	margin: auto;
+	height: auto;
+	padding: 12px;
+	display: block;
+	text-align: center;
+	background-color: #3D8B37;
+	line-height: 32px;
+}
+
+.larticle p {
+    margin: 0px;
+}
+
 .temperature {
-	margin: 1rem;
-	max-width: 500px;
-	background-color: lightblue;
-	padding: 1rem;
-	border: 1px solid #444;
-	margin-right: auto;
-	margin-left: auto;
+    margin: 10px;
+    max-width: 340px;
+    max-height: 350px;
+    background-color: #3D8B37;
+    padding: 1rem;
+    border: 1px solid #444;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    float: left;
+    margin-top: 15px;
+	opacity: .7;
+}
+
+.temperature p {
+	display: block;
+    margin-block-start: -.5em;
+    margin-block-end: -.5em;
 }
 
 .logo {
@@ -62,6 +121,18 @@ footer {
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+th {
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+
+td {
+	padding-right: 13px;
+	padding-left: 13px;
+	text-align: center;
 }
 
 .motto {
@@ -302,6 +373,10 @@ h2 + img {
 	min-width: auto;
 }
 
+aside p list {
+	color: #E0EEE0;
+}
+
 /* child selectors */
 div > a {
 	color: #BDFCC9;
@@ -310,6 +385,26 @@ div > a {
 
 .nav li > a {
 	text-decoration: none;
+}
+
+p > list {
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+aside > p {
+	height: auto;
+	width: 500px;
+	margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+	padding: 10px;
+}
+
+list:after {
+	content: '\a';
+	white-space: pre;
 }
 
 /* link pseudo-class selectors */
