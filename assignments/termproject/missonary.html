@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>Missionaries</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+        </head>
+            <body>
+                <header>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                    <h1>Full-Time Missionaries</h1>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a class="active" href="home.html">Home</a></li>
+                                <li><a href="temple.html">Temples</a></li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                    <li><a href="reception.html">Reception</a></li>
+                                    <li><a href="missonary.html">Temple Missionaries</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h3>Gallery</h3>
+                    <div class="container">
+                        <div><img src="images/cloudy.jpg.bak" alt="Cloudy" class="cloudy">Cloudy weather in Pocatello</div>
+                        <div><img src="images/lightning.jpg.bak" alt="Lightning" class="lightning">Lightning storms in Twin Falls</div>
+                        <div><img src="images/rain.jpg.bak" alt="Rain" class="rain">Rainstorm down in Preston</div>
+                        <div><img src="images/rainbow.jpg.bak" alt="Rainbow" class="rainbow">Rainstorm over in Boise</div>
+                        <div><img src="images/snow.jpg.bak" alt="Snow" class="snow">Big snow storm in Idaho Falls</div>
+                        <div><img src="images/sunshine.jpg.bak" alt="Sunshine" class="sunshine">Sunshine down in Fish Haven</div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <div id="map"></div>
+                    <p style="display: inline">
+                        &#169;
+                        <script>
+                        document.write(new Date().getFullYear());
+                        </script>
+                        <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
+                    </p>
+                </footer>
+                <script src="scripts/currentdate.js"></script>
+                <script src="scripts/hamburger.js"></script>
+                <script src="scripts/map.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmmUz5SuSGILYQ8g9CxxPvSN7KKPJXo_0&callback=initMap" async defer></script>
+            </body>
+    </html>

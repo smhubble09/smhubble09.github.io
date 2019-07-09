@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>Contact Us</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+        </head>
+            <body>
+                <header>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                    <h1>Contact Us</h1>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a class="active" href="home.html">Home</a></li>
+                                <li><a href="temple.html">Temples</a></li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                    <li><a href="reception.html">Reception</a></li>
+                                    <li><a href="missonary.html">Temple Missionaries</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h3>Contact Us</h3>
+                    <form action="https://smhubble09.github.io/assignments/lesson-8/thanks.html">
+                        <div class="form">
+                            <label for="name">Please enter your Full Name:</label>
+                            <input type="text" id="name" name="name" minlength="5" size="12" required pattern="[A-Za-z ]{5,}"><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="myemail@gmail.com"><br>
+
+                            <label for="tel">Phone Number:</label>
+                            <input type="tel" id="tel" name="tel" required><br>
+
+                            <label for="zipCode">Zip Code:</label>
+                            <input type="number" id="zipCode" name="zipCode" required><br>
+
+                            <label for="sDate">Storm Date:</label>
+                            <input type="date" id="sDate" name="sDate"><br>
+
+                            <label for="sType">Storm Type:</label>
+                            <input list="types" id="sType" name="sType">
+                            <datalist id="types">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist><br>
+
+                            <label for="severity">Storm Severity:</label>
+                            1<input type="range" id="severity" name="severity" min="1" max="10">10<br>
+
+                            <label for="region">Storm Region:</label>
+                            <select id="region" name="region">
+                                <option value="Select Region" selected disabled>Select Region</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Sugar City">Sugar City</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select><br>
+
+                            Are you in danger?
+                            <input type="radio" id="yes" name="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="no">
+                            <label for="no">No</label><br>
+
+                            <label for="info">Additional Information/Comments:</label><br>
+                            <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea><br>
+                            
+                            <label for="submit"></label>
+                            <input type="submit" id="submit" name="submit" value="Thanks">
+                        </div>
+                    </form>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <div><img src="images/idahomap.png.bak" class="map" alt="Map"></div>
+                    <p style="display: inline">
+                        &#169;
+                        <script>
+                        document.write(new Date().getFullYear());
+                        </script>
+                        <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
+                </footer>
+                <script src="scripts/currentdate.js"></script>
+                <script src="scripts/hamburger.js"></script>
+            </body>
+    </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <title>The Temple Inn & Suites</title>
+            <meta name="description" content="CIT230 Assignment: Weather Site - Town Page">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+        </head>
+            <body>
+                <header>
+                    <div class="logo"><img src="images/logo.png.bak" alt="Logo"></div>
+                    <h1>The Temple Inn & Suites</h1>
+                </header>
+                <main>
+                    <div class="motto">Always getting the information you need!</div>
+                    <nav class="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="hamburger" onclick="toggleMenu()">&#9776; Menu</a></li>
+                                <li><a class="active" href="home.html">Home</a></li>
+                                <li><a href="temple.html">Temples</a></li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                    <li><a href="reception.html">Reception</a></li>
+                                    <li><a href="missonary.html">Temple Missionaries</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <section class="contain">
+                        
+                    </section>
+                </main>
+                <footer>
+                    <div class="contact">
+                        <p>
+                        Phone #: 123-456-7890 | Email: weatheroftoday@gmail.com
+                        </p>
+                    </div>
+                    <div><img src="images/idahomap.png.bak" class="map" alt="Map"></div>
+                    <p style="display: inline">
+                            <p>&COPY;Weather Of Today | Attributions: Open Weather - https://home.openweathermap.org/ | Shane Hubble | <span id="currentDate"></span></p>
+                </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/json.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            </body>
+    </html>
