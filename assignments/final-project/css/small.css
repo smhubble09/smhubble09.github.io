@@ -138,6 +138,7 @@ footer {
 div > a {
 	color: #BDFCC9;
 	text-decoration: none;
+	word-spacing: 0px;
 }
 
 
@@ -199,7 +200,6 @@ nav ol {
 	display: block;	
 	background-color: #000080;
 }
-
 
 .navigation li:first-child {
 	display: block;
