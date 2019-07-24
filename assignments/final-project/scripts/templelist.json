@@ -3,7 +3,7 @@
   {
     "name": "Salt Lake City",
 	"address": [
-	"50 W North Temple St \n Salt Lake City, UT 84150 \n United States"
+	"50 W North Temple St \r Salt Lake City, UT 84150\nUnited States"
 	],
 	"telephone": "(1) 801-240-2640",
 	"email": "Please visit LDS.org and sign in to email",
