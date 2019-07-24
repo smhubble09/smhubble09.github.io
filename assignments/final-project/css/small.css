@@ -186,6 +186,18 @@ div > a {
 	max-width: 300px;
 }
 
+p > list {
+	display: block;
+	text-align: center;
+	height: auto;
+	width: 500px;
+	margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+	padding: 10px;
+}
+
 /* Navigation */
 nav {
 	background: #000080;

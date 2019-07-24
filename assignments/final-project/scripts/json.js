@@ -55,7 +55,7 @@ function populateTempleInfo(jsonObj){
     myPara4.textContent = 'Services: ' + temple.services;
 	myPara5.textContent = 'History: ' + temple.history;
 	myPara6.textContent = 'Endowment Schedule: ' + temple.sschedule;
-	myPara7.textContent = 'Temple Closures: ' + temple.tcschedule;
+	myPara7.textContent = 'Temple Closures: ';
 
     switch (myH2.textContent){
         case 'Salt Lake City':
@@ -74,7 +74,13 @@ function populateTempleInfo(jsonObj){
             myImage.src = 'images/paysontemple.jpg.bak';
              break;
     }
-
+	var allSchedules = info[i].tcschedule;
+	for (var l = 0; l < allSchedules.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allSchedules[l];
+	myPara7.appendChild(listItem);
+	}
+	
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
