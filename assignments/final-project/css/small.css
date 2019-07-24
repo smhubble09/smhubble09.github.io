@@ -59,6 +59,7 @@ header {
 	background-color: #f1f1f3;
 	border: 1px solid #97999b;
 }
+
 main {
 	margin: 5px auto;
     padding: 5px;
@@ -138,9 +139,47 @@ footer {
 div > a {
 	color: #BDFCC9;
 	text-decoration: none;
-	word-spacing: 0px;
 }
 
+/* Temple Info */
+.templeinfo{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.templeinfo div {
+	border-radius: 5px;
+	padding: 0px;
+	max-width: 300px;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 10px #333;
+	background-color: #3D8B37;
+}
+
+.templeinfo p {
+	color: white;
+}
+
+.templeinfo h2 {
+	text-align: center;
+	margin-top: 12px;
+	color: #4AC948;
+}
+	
+.templeinfo p:first-of-type{
+	text-align: left;
+	margin-bottom: 24px;
+	font-size: 12px;
+	color: #4AC948;
+	margin-top: 0;
+}
+	
+.templeinfo img{
+	margin: 18px auto 0 auto;
+	max-width: 300px;
+}
 
 /* Navigation */
 nav {
@@ -241,6 +280,7 @@ nav ol {
 
 .navigation li a:hover {
 	color: orange;
+	background-color: #177CFF;
 }
 
 .navigation li a:active {

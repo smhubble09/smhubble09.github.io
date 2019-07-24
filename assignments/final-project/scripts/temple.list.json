@@ -1,0 +1,120 @@
+{
+	"temples" : [
+  {
+    "name": "Salt Lake City",
+	"address": [
+	"50 W North Temple St", 
+	"Salt Lake City, UT 84150", 
+	"United States"
+	],
+	"telephone": "(1) 801-240-2640",
+	"email": "Please visit LDS.org and sign in to email",
+	"services": [
+	"Clothing rental available",
+	"Cafeteria available",
+	"No patron housing available",
+	"Distribution center nearby"
+	],
+	"history": "",
+	"sschedule": "Every hour from 6:00 AM to 7:00 PM",
+	"tcschedule": [
+	"2019",
+	"Wednesday, 24 July 2019",
+	"Saturday, 5 October 2019",
+	"Thursday, 17 October 2019 (Limited Hours)",
+	"Wednesday, 27 November 2019 (Limited Hours)",
+	"Thursday, 28 November 2019 - Friday, 29 November 2019",
+	"Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+	"Tuesday, 31 December 2019"
+	]
+  },
+  {
+    "name": "Oklahoma City",
+	"address": [
+	"12030 N Mustang Rd", 
+	"Yukon, OK 73099", 
+	"United States"
+	],
+	"telephone": "(1) 405-373-2309",
+	"email": "Please visit LDS.org and sign in to email",
+	"services": [
+	"No clothing rental available", 
+	"No cafeteria available",
+	"No patron housing available",
+	"No distribution center nearby"
+	],
+	"history": "",
+	"sschedule": [
+	"9:00 AM",
+	"11:00 AM",
+	"1:00 PM",
+	"6:00 PM",
+	"7:30 PM"
+	],
+	"tcschedule": [
+	"2019",
+	"Saturday, 5 October 2019",
+	"Wednesday, 27 November 2019 (Limited Hours)",
+	"Thursday, 28 November 2019",
+	"Monday, 2 December 2019 - Monday, 16 December 2019",
+	"Tuesday, 24 December 2019",
+	"Wednesday, 25 December 2019",
+	"Thursday, 26 December 2019 (Limited Hours)",
+	"Tuesday, 31 December 2019"
+	]
+  },
+    {
+    "name": "Los Angeles",
+	"address": [
+	"10777 Santa Monica Blvd",
+	"Los Angeles, CA 90025",
+	"United States"
+	],
+	"telephone": "(1) 310-474-5569",
+	"email": "Please visit LDS.org and sign in to email",
+	"services": [
+	"Clothing rental available",
+	"Cafeteria available",
+	"Patron housing available",
+	"Distribution center nearby"
+	],
+	"history": "",
+	"sschedule": "Every 75 minutes from 5:30 AM to 7:30 PM",
+	"tcschedule": [
+	"Tuesday, 16 July 2019 - Monday, 29 July 2019",
+	"Saturday, 5 October 2019",
+	"Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+	"Friday, 29 November 2019 (Limited Hours)",
+	"Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+	"Tuesday, 31 December 2019"
+	]
+  },
+    {
+    "name": "Payson",
+	"address": [
+	"1494 S 930 W",
+	"Payson, UT 84651",
+	"United States"
+	],
+	"telephone": "(1) 801-754-4949",
+	"email": "Please visit LDS.org and sign in to email",
+	"services": [
+	"No clothing rental available",
+	"No cafeteria available",
+	"No patron housing available",
+	"Distribution center nearby"
+	],
+	"history": "",
+	"sschedule": "Every 40 minutes from 7:00 AM to 7:40 PM",
+	"tcschedule": [
+	"Wednesday, 24 July 2019",
+	"Saturday, 5 October 2019",
+	"Monday, 14 October 2019 - Monday, 4 November 2019",
+	"Wednesday, 27 November 2019 (Limited Hours)",
+	"Thursday, 28 November 2019",
+	"Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+	"Tuesday, 31 December 2019"
+	]
+  }
+ ]
+}

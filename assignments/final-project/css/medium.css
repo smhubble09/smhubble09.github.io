@@ -226,6 +226,14 @@ div > a {
 	text-decoration: none;
 }
 
+/* Temple Info */
+.templeinfo{
+	display:flex;
+	flex-flow: row wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 /* link pseudo-class selectors */
 .nav li a:focus {
 	color: black;
