@@ -18,6 +18,8 @@ h2 {
     font-size: 25px;
 	font-family: 'Montserrat', sans-serif;
     color: #177CFF;
+	height: auto;
+	width: auto;
 }
 
 h3 {
@@ -164,13 +166,14 @@ div > a {
 }
 
 .templeinfo h2 {
-	text-align: center;
-	margin-top: 12px;
-	margin-left: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
 	color: #FFDF00;
 }
-	
+
 .templeinfo p:first-of-type{
     text-align: center;
     margin-bottom: 24px;
@@ -182,8 +185,9 @@ div > a {
 }
 	
 .templeinfo img{
-	margin: 18px auto 0 auto;
-	max-width: 300px;
+    max-width: 504px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p > list {
@@ -196,10 +200,15 @@ p > list {
     margin-inline-start: auto;
     margin-inline-end: auto;
     padding: 0px;
+	color: white;
 }
 
-p > list:first-of-type{
-	color: #177CFF;
+.templeinfo div > p{
+    color: #177CFF;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 p > list:before {

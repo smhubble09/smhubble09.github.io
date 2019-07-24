@@ -46,16 +46,18 @@ function populateTempleInfo(jsonObj){
 	var myPara5 = document.createElement('p');
 	var myPara6 = document.createElement('p');
 	var myPara7 = document.createElement('p');
+	var myPara8 = document.createElement('p');
     var myImage = document.createElement('img');
 
-    myH2.textContent = temple.name + ' Temple';
+    myH2.textContent = temple.name;
     myPara1.textContent = temple.address;
-    myPara2.textContent = 'Telephone: ' + temple.telephone;
-    myPara3.textContent = 'Email: ' + temple.email;
+    myPara2.textContent = 'Telephone: ';
+    myPara3.textContent = 'Email: ';
     myPara4.textContent = 'Services: ';
-	myPara5.textContent = 'History: ' + temple.history;
-	myPara6.textContent = 'Endowment Schedule: ' + temple.sschedule;
+	myPara5.textContent = 'History: ';
+	myPara6.textContent = 'Endowment Schedule: ';
 	myPara7.textContent = 'Temple Closures: ';
+	myPara8.textContent = 'Current Weather: ';
 
     switch (myH2.textContent){
         case 'Salt Lake City':
@@ -74,11 +76,17 @@ function populateTempleInfo(jsonObj){
             myImage.src = 'images/paysontemple.jpg.bak';
              break;
     }
-	var allSchedules = info[i].tcschedule;
-	for (var l = 0; l < allSchedules.length; l++) {
+	var allNumbers = info[i].telephone;
+	for (var l = 0; l < allNumbers.length; l++) {
 	var listItem = document.createElement('list');
-	listItem.textContent = allSchedules[l];
-	myPara7.appendChild(listItem);
+	listItem.textContent = allNumbers[l];
+	myPara2.appendChild(listItem);
+	}
+	var allEmail = info[i].email;
+	for (var l = 0; l < allEmail.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allEmail[l];
+	myPara3.appendChild(listItem);
 	}
 	var allServices = info[i].services;
 	for (var l = 0; l < allServices.length; l++) {
@@ -86,14 +94,59 @@ function populateTempleInfo(jsonObj){
 	listItem.textContent = allServices[l];
 	myPara4.appendChild(listItem);
 	}
+	var allHistory = info[i].history;
+	for (var l = 0; l < allHistory.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allHistory[l];
+	myPara5.appendChild(listItem);
+	}
 	var allEndowment = info[i].sschedule;
 	for (var l = 0; l < allEndowment.length; l++) {
 	var listItem = document.createElement('list');
 	listItem.textContent = allEndowment[l];
 	myPara6.appendChild(listItem);
 	}
+	var allSchedules = info[i].tcschedule;
+	for (var l = 0; l < allSchedules.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allSchedules[l];
+	myPara7.appendChild(listItem);
+	}
 	
+/*Current Weather
+var weatherCurrent = new XMLHttpRequest();
+var cityID = ''
+    switch (myH2.textContent){
+        case 'Salt Lake City':
+            cityID = '5780993';
+            break;
+
+        case 'Oklahoma City':
+			cityID = '4544349';
+			break;
+
+        case 'Los Angeles':
+            cityID = '5368361';
+             break;
+		
+		case 'Payson':
+            cityID = '5308305';
+             break;
+    }
+var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2';
+
+weatherCurrent.open('Get', apiURLstring, true);
+weatherCurrent.send();
+
+weatherCurrent.onload = function () {
+	var weatherData = JSON.parse(weatherCurrent.responseText);
+	console.log(weatherData);
+	
+	document.getElementById('curTemp').innerHTML = Math.round(weatherData.main.temp);
+}*/
+
     myArticle.appendChild(myH2);
+	myArticle.appendChild(myImage);
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
@@ -101,7 +154,7 @@ function populateTempleInfo(jsonObj){
 	myArticle.appendChild(myPara5);
 	myArticle.appendChild(myPara6);
 	myArticle.appendChild(myPara7);
-    myArticle.appendChild(myImage);
+	myArticle.appendChild(myPara8);
     myArticle.className = 'templeinfo';
     section.appendChild(myArticle); 
 }
