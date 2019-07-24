@@ -187,15 +187,19 @@ div > a {
 }
 
 p > list {
-	display: block;
-	text-align: center;
-	height: auto;
-	width: 500px;
-	margin-block-start: auto;
+    display: block;
+    text-align: left;
+    height: auto;
+    width: 500px;
+    margin-block-start: auto;
     margin-block-end: auto;
     margin-inline-start: auto;
     margin-inline-end: auto;
-	padding: 10px;
+    padding: 0px;
+}
+
+p > list:before {
+    content:"• ";
 }
 
 /* Navigation */

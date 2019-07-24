@@ -52,7 +52,7 @@ function populateTempleInfo(jsonObj){
     myPara1.textContent = temple.address;
     myPara2.textContent = 'Telephone: ' + temple.telephone;
     myPara3.textContent = 'Email: ' + temple.email;
-    myPara4.textContent = 'Services: ' + temple.services;
+    myPara4.textContent = 'Services: ';
 	myPara5.textContent = 'History: ' + temple.history;
 	myPara6.textContent = 'Endowment Schedule: ' + temple.sschedule;
 	myPara7.textContent = 'Temple Closures: ';
@@ -79,6 +79,18 @@ function populateTempleInfo(jsonObj){
 	var listItem = document.createElement('list');
 	listItem.textContent = allSchedules[l];
 	myPara7.appendChild(listItem);
+	}
+	var allServices = info[i].services;
+	for (var l = 0; l < allServices.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allServices[l];
+	myPara4.appendChild(listItem);
+	}
+	var allEndowment = info[i].sschedule;
+	for (var l = 0; l < allEndowment.length; l++) {
+	var listItem = document.createElement('list');
+	listItem.textContent = allEndowment[l];
+	myPara6.appendChild(listItem);
 	}
 	
     myArticle.appendChild(myH2);
