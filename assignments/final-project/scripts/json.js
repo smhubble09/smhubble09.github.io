@@ -59,19 +59,19 @@ function populateTempleInfo(jsonObj){
 
     switch (myH2.textContent){
         case 'Salt Lake City':
-            myImage.src = "images/slctemple.jpeg.bak";
+            myImage.src = 'images/slctemple.jpeg.bak';
             break;
 
         case 'Oklahoma City':
-			myImage.src = "images/okctemple.jpeg.bak";
+			myImage.src = 'images/okctemple.jpeg.bak';
 			break;
 
         case 'Los Angeles':
-            myImage.src = "images/latemple.jpg.bak";
+            myImage.src = 'images/latemple.jpg.bak';
              break;
 		
 		case 'Payson':
-            myImage.src = "images/paysontemple.jpg.bak";
+            myImage.src = 'images/paysontemple.jpg.bak';
              break;
     }
 
