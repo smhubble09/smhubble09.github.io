@@ -198,6 +198,10 @@ p > list {
     padding: 0px;
 }
 
+p > list:first-of-type{
+	color: #177CFF;
+}
+
 p > list:before {
     content:"• ";
 }
