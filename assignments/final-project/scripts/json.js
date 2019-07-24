@@ -1,5 +1,5 @@
 var section = document.querySelector('section.templeinfo');
-var requestURL = 'https://smhubble09.github.io/assignments/final-project/scripts/temple.list.json';
+var requestURL = 'https://smhubble09.github.io/assignments/final-project/scripts/templelist.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
