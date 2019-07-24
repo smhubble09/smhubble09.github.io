@@ -143,6 +143,49 @@ div > a {
 	text-decoration: none;
 }
 
+/* Map */
+#map {
+    height: 250px;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+	background-color: grey;
+}
+
+/* Form */
+.left {
+	display: block;
+	float: left;
+    width: 480px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.right {
+	display: block;
+	float: right;
+    width: 480px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+div.form {
+	display: block;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form {
+	display: inline-block;
+	width: auto;
+	max-width:500px;
+	margin:0 auto;
+	background-color: #000080;
+	color: white;
+	box-shadow: 0 0 50px #333;
+}
+
 /* Temple Info */
 .templeinfo{
 	display: flex;

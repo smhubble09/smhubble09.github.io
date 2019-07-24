@@ -57,7 +57,6 @@ function populateTempleInfo(jsonObj){
 	myPara5.textContent = 'History: ';
 	myPara6.textContent = 'Endowment Schedule: ';
 	myPara7.textContent = 'Temple Closures: ';
-	myPara8.textContent = 'Current Weather: ';
 
     switch (myH2.textContent){
         case 'Salt Lake City':
@@ -113,7 +112,7 @@ function populateTempleInfo(jsonObj){
 	myPara7.appendChild(listItem);
 	}
 	
-/*Current Weather
+// Current Weather
 var weatherCurrent = new XMLHttpRequest();
 var cityID = ''
     switch (myH2.textContent){
@@ -142,8 +141,8 @@ weatherCurrent.onload = function () {
 	var weatherData = JSON.parse(weatherCurrent.responseText);
 	console.log(weatherData);
 	
-	document.getElementById('curTemp').innerHTML = Math.round(weatherData.main.temp);
-}*/
+	myPara8.textContent = 'Current Weather: ' + Math.round(weatherData.main.temp) + '°F';
+}
 
     myArticle.appendChild(myH2);
 	myArticle.appendChild(myImage);

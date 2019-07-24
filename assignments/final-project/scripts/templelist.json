@@ -21,8 +21,7 @@
 	"Thursday, 28 November 2019 - Friday, 29 November 2019",
 	"Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
 	"Tuesday, 31 December 2019"
-	],
-	"weather": "https://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&APPID=b47f2cab33c690b0345b5ace29342cc2"
+	]
   },
   {
     "name": "Oklahoma City",
