@@ -89,14 +89,6 @@ footer {
 	max-width: 8%;
 }
 
-.map {
-	max-width: 30%;
-	max-height: 30%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .motto {
 	font-size: 18px;
 	color: #177CFF;	
@@ -143,15 +135,6 @@ div > a {
 	text-decoration: none;
 }
 
-/* Map */
-#map {
-    height: 250px;
-    width: 25%;
-    margin-right: auto;
-    margin-left: auto;
-	background-color: grey;
-}
-
 /* Form */
 .left {
 	display: block;
@@ -169,15 +152,27 @@ div > a {
     margin-bottom: 5px;
 }
 
+textarea {
+	resize: none;
+    overflow: hidden;
+    max-height: 100px;
+    padding-bottom: 150px;
+}
+
 div.form {
-	display: block;
+	display: flex;
+	flex-direction: column;
     text-align: center;
+    align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+	max-height: 345px;
+	overflow: auto;
 }
 
 .form {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	width: auto;
 	max-width:500px;
 	margin:0 auto;

@@ -40,31 +40,46 @@
                     <form action="https://smhubble09.github.io/assignments/final-project/thanks.html">
                         <div class="form">
                             <label for="name">Please enter your Full Name:</label>
-                            <input type="text" id="name" name="name" minlength="5" size="20" required pattern="[A-Za-z ]{5,}"><br>
+                            <input type="text" id="name" name="name" minlength="5" size="20" required pattern="[A-Za-z ]{5,}">
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="myemail@gmail.com"><br>
+                            <input type="email" id="email" name="email" placeholder="myemail@gmail.com">
 
                             <label for="tel">Phone Number:</label>
-                            <input type="tel" id="tel" name="tel" required><br>
+                            <input type="tel" id="tel" name="tel" required>
+
+                            <label for="home">Home State/Country:</label>
+                            <input type="text" id="home" name="home" minlength="5" size="20" required pattern="[A-Za-z ]{5,}">
+
+                            <label for="rooms">Number of Rooms needed:</label>
+                            <input type="text" id="name" name="rooms" size="2">
+
+                            <label for="rType">Location:</label>
+                            <select id="rType" name="rType">
+                                <option value="Select Room Type" selected disabled>Select Room Type</option>
+                                <option value="Single Queen">Single Queen</option>
+                                <option value="Double Queen">Double Queen</option>
+                                <option value="Single King">Single King</option>
+                                <option value="Double King">Double King</option>
+                            </select>
 
                             <label for="sDate">Check in:</label>
-                            <input type="date" id="start" name="vac-start" min="2019-0-01" max="2020-12-31"><br>
+                            <input type="date" id="start" name="vac-start" min="2019-0-01" max="2020-12-31">
 
                             <label for="eDate">Check out:</label>
-                            <input type="date" id="end" name="vac-end" min="2019-01-01" max="2020-12-31"><br>
+                            <input type="date" id="end" name="vac-end" min="2019-01-01" max="2020-12-31">
 
-                            <label for="region">City you wold like to stay at:</label>
+                            <label for="region">Location:</label>
                             <select id="region" name="region">
                                 <option value="Select City" selected disabled>Select City</option>
                                 <option value="Los Angeles">Los Angeles, CA</option>
                                 <option value="Oklahoma City">Oklahoma City, OK</option>
                                 <option value="Payson">Payson, UT</option>
                                 <option value="Salt Lake City">Salt Lake City, UT</option>
-                            </select><br>
+                            </select>
 
-                            <label for="info">Are there any specific needs?</label><br>
-                            <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea><br>
+                            <label for="info">Special accommodations or comments:</label>
+                            <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea>
                             
                             <label for="submit"></label>
                             <input type="submit" id="submit" name="submit" value="Reserve">
@@ -77,7 +92,7 @@
                         Phone #: 123-456-7890 | Email: templeinn@suites.com
                         </p>
                     </div>
-                    <div><img src="images/idahomap.png.bak" class="map" alt="Map"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4071204362344!2d-77.09743617014495!3d38.983203825429115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1564083544032!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <p style="display: inline">
                             <p>&COPY;The Temple Inn & Suites | Shane Hubble | <span id="currentDate"></span></p>
                 </footer>
