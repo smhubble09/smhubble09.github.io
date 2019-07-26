@@ -36,48 +36,26 @@
                         </div>
                     </nav>
                     <form action="https://smhubble09.github.io/assignments/lesson-8/thanks.html">
-                        <div class="form">
-                            <label for="name">Please enter your Full Name:</label>
-                            <input type="text" id="name" name="name" minlength="5" size="12" required pattern="[A-Za-z ]{5,}"><br>
+                        <div class="comment">Tell us how we did! Tell us what you thought about our services. If there's something to improve, let us know. We're more than happy to listen.</div>
+                        <div><img src="images/temple4.jpg" class="cLeft"></div>
+                        <div class="contactForm">
+                            <label for="name">Please enter your Full Name:</label><br>
+                            <input type="text" id="name" name="name" minlength="5" size="20" required pattern="[A-Za-z]{5,}\\"><br>
 
-                            <label for="email">Email:</label>
+                            <label for="email">Email:</label><br>
                             <input type="email" id="email" name="email" placeholder="myemail@gmail.com"><br>
 
-                            <label for="tel">Phone Number:</label>
+                            <label for="tel">Phone Number:</label><br>
                             <input type="tel" id="tel" name="tel" required><br>
 
-                            <label for="zipCode">Zip Code:</label>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" minlength="5" size="50" required pattern="[A-Za-z ]{5,}"><br>
+
+                            <label for="state">State:</label><br>
+                            <input type="text" id="state" name="state" minlength="5" size="10" required pattern="[A-Za-z ]{5,}"><br>
+
+                            <label for="zipCode">Zip Code:</label><br>
                             <input type="number" id="zipCode" name="zipCode" required><br>
-
-                            <label for="sDate">Storm Date:</label>
-                            <input type="date" id="sDate" name="sDate"><br>
-
-                            <label for="sType">Storm Type:</label>
-                            <input list="types" id="sType" name="sType">
-                            <datalist id="types">
-                                <option value="Flash Flood"></option>
-                                <option value="Hail"></option>
-                                <option value="Hurricane"></option>
-                                <option value="Thunderstorm"></option>
-                                <option value="Tornado"></option>
-                            </datalist><br>
-
-                            <label for="severity">Storm Severity:</label>
-                            1<input type="range" id="severity" name="severity" min="1" max="10">10<br>
-
-                            <label for="region">Storm Region:</label>
-                            <select id="region" name="region">
-                                <option value="Select Region" selected disabled>Select Region</option>
-                                <option value="Preston">Preston</option>
-                                <option value="Sugar City">Sugar City</option>
-                                <option value="Fish Haven">Fish Haven</option>
-                            </select><br>
-
-                            Are you in danger?
-                            <input type="radio" id="yes" name="yes">
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="no" name="no">
-                            <label for="no">No</label><br>
 
                             <label for="info">Additional Information/Comments:</label><br>
                             <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea><br>
@@ -90,12 +68,12 @@
                 <footer>
                     <div class="contact">
                         <p>
-                        Phone #: 123-456-7890 | Email: templeinn@suites.com
+                        Phone #: 123-456-7890 | Email: templeinn@suites.com | 4800 Montgomery Ln #300, Bethesda, MD 20814
                         </p>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4071204362344!2d-77.09743617014495!3d38.983203825429115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1564083544032!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <p style="display: inline">
-                            <p>&COPY;The Temple Inn & Suites | Shane Hubble | <span id="currentDate"></span></p>
+                    <p>&COPY;The Temple Inn & Suites | Shane Hubble | <span id="currentDate"></span></p>
                 </footer>
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
