@@ -79,6 +79,10 @@ footer {
     border: 1px solid #97999b;
 }
 
+.wedding {
+	background-image: url('images/wedding.jpg');
+}
+
 /* class selectors */
 .logo {
 	width: auto;
@@ -192,6 +196,21 @@ button:hover {
 	background-color: #177CFF;
 	color: white;
 	box-shadow: 0 0 50px #333;	
+}
+
+/* Reception Form */
+.receptionForm {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+    margin-bottom: 15px;
+	margin-left: 10px;
+	min-width: 350px;
+	width: auto;
+	max-width:500px;
+	background-color: #177CFF;
+	color: #000080;
+	box-shadow: 0 0 20px #000080;
 }
 
 /* Contact Form */

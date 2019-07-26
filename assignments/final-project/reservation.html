@@ -37,7 +37,7 @@
                     </nav>
                     <div><img src="images/temple1.jpg.bak" class="left" alt="temple"></div>
                     <div><img src="images/temple2.jpg.bak" class="right" alt="temple"></div>
-                    <form action="https://smhubble09.github.io/assignments/final-project/thanks.html">
+                    <form action="thanks.html">
                         <div class="form">
                             <label for="name">Please enter your Full Name:</label>
                             <input type="text" id="name" name="name" minlength="5" size="20" required pattern="[A-Za-z ]{5,}">
@@ -49,12 +49,12 @@
                             <input type="tel" id="tel" name="tel" required>
 
                             <label for="home">Home State/Country:</label>
-                            <input type="text" id="home" name="home" minlength="5" size="20" required pattern="[A-Za-z ]{5,}">
+                            <input type="text" id="home" name="home" minlength="2" size="20" required pattern="[A-Za-z ]{5,}">
 
                             <label for="rooms">Number of Rooms needed:</label>
-                            <input type="text" id="rooms" name="rooms" size="2">
+                            <input type="number" id="rooms" name="rooms" size="2">
 
-                            <label for="rType">Location:</label>
+                            <label for="rType">Room Type:</label>
                             <select id="rType" name="rType">
                                 <option value="Select Room Type" selected disabled>Select Room Type</option>
                                 <option value="Single Queen">Single Queen</option>
