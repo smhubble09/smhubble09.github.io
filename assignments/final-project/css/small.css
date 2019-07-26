@@ -406,7 +406,7 @@ div.form {
     margin-bottom: 24px;
     margin-right: auto;
     margin-left: auto;
-    color: #177CFF;
+    color: #FFDF00;
     margin-top: 0;
     font-size: 16px;
 }
@@ -432,7 +432,7 @@ p > list {
 }
 
 .templeinfo div > p{
-    color: #177CFF;
+    color: #FFDF00;
     height: auto;
     width: auto;
     margin-top: 2px;
