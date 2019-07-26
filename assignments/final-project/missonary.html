@@ -35,8 +35,43 @@
                             </ul>
                         </div>
                     </nav>
-                    <h3>Gallery</h3>
+                    <h3>Here for a longer stay?</h3>
+                    <div class="paragraph"><p>Check out our long term temple missionary suites. Please fill out the form below
+                        to reserve your home away from home!</p>
+                        </div>
+                    <div class="suites">
+                        <div><img src="images/suite1.jpg.bak" alt="Suite1" class="suite1"></div>
+                        <div><img src="images/suite2.jpg.bak" alt="Suite2" class="suite2"></div>
+                        <div><img src="images/suite3.jpg.bak" alt="Suite3" class="suite3"></div>
+                        <div><img src="images/suite4.jpg.bak" alt="Suite4" class="suite4"></div>
+                    </div>
+                    <form action="thanks.html">
+                        <div class="suiteForm">
+                            <label for="name">Please enter your Full Name:</label><br>
+                            <input type="text" id="name" name="name" minlength="5" size="20" required pattern="[A-Za-z ]{5,}"><br>
 
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="myemail@gmail.com"><br>
+
+                            <label for="tel">Phone Number:</label><br>
+                            <input type="tel" id="tel" name="tel" required><br>
+
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="address" name="address" minlength="5" size="50" required><br>
+
+                            <label for="state">State:</label><br>
+                            <input type="text" id="state" name="state" minlength="2" size="10" required pattern="[A-Za-z ]{2,}"><br>
+
+                            <label for="zipCode">Zip Code:</label><br>
+                            <input type="number" id="zipCode" name="zipCode" required><br>
+
+                            <label for="info">Additional Information/Comments:</label><br>
+                            <textarea id="info" name="info" style="height:100px;width:400px" rows="10"></textarea><br>
+                            
+                            <label for="submit"></label>
+                            <input type="submit" id="submit" name="submit" value="Submit">
+                        </div>
+                    </form>
                 </main>
                 <footer>
                     <div class="contact">

@@ -80,7 +80,96 @@ footer {
 }
 
 .wedding {
-	background-image: url('images/wedding.jpg');
+	background-image: url('https://smhubble09.github.io/assignments/final-project/images/wedding.jpg.bak');
+}
+
+/* Home Temple */
+.atlanta {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 65%;
+	margin-top: 10px;
+}
+
+
+/* Paragraphs */
+.paragraph {
+	text-align: center;
+	color: blue;
+	background-color: silver;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.thanks {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+    margin-bottom: 15px;
+	margin-inline-start: 15px;
+	min-width: 350px;
+	width: auto;
+	max-width:500px;
+	background-color: #177CFF;
+	color: #000080;
+	box-shadow: 0 0 20px #000080;
+}
+
+/* Suites */
+.suites {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+.suite1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 95%;
+}
+
+.suite2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 95%;
+}
+
+.suite3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 95%;
+}
+
+.suite4 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	max-width: 95%;
+}
+
+.suiteForm {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+    margin-bottom: 15px;
+	margin-inline-start: 15px;
+	min-width: 350px;
+	width: auto;
+	max-width:1000px;
+	background-color: #177CFF;
+	color: #000080;
+	box-shadow: 0 0 20px #000080;
 }
 
 /* class selectors */
@@ -112,21 +201,6 @@ footer {
 	margin-right: auto;
 	width: 40%;
 }
-
-/* ID selectors */
-
-#main {
-	margin: 16px 32px;
-}
-
-/* descendant selectors */
-
-
-/* adjacent sibling selectors */
-/*h2 + img {
-	min-height: 75px;
-	min-width: auto;
-}*/
 
 /* child selectors */
 div > a {
